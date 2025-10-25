@@ -12,6 +12,10 @@ class User(AbstractUser):
         null=True,
         help_text="Введите номер телефона",
     )
+    name = models.TextField(
+        max_length=100,
+        verbose_name="ФИО пользователя",)
+
     avatar = models.ImageField(
         upload_to="users/avatars/",
         blank=True,
@@ -26,6 +30,7 @@ class User(AbstractUser):
         null=True,
         help_text="Введите из какого вы города",
     )
+    number_of_delays = models.IntegerField(default=0, verbose_name="число просрочек возврата книг")
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []
