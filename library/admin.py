@@ -5,9 +5,9 @@ from library.models import Author, Book, BookLoan
 
 @admin.register(Author)
 class AuthorAdmin(admin.ModelAdmin):
-    list_display = ("name_author", "bio", "created_at", "updated_at")
-    list_filter = ("name_author", "bio")
-    search_fields = ("name_author", "bio")
+    list_display = ("name_author", "created_at", "updated_at")
+    list_filter = ("name_author",)
+    search_fields = ("name_author",)
 
 
 @admin.register(Book)

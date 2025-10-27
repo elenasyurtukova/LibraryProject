@@ -7,6 +7,12 @@ class Author(models.Model):
         blank=True,
         null=True,
         verbose_name="биография автора")
+    photo_author = models.ImageField(
+        upload_to="library/avatars/",
+        blank=True,
+        null=True,
+        verbose_name="Портрет автора"
+    )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -32,7 +38,7 @@ class Book(models.Model):
                                     default='available', verbose_name="флаг доступности книги")
 
     def __str__(self):
-        return f"Автор: {self.author.name} название книги: {self.title}"
+        return f"Автор: {self.author.name_author} название книги: {self.title}"
 
     class Meta:
         verbose_name = "Книга"
