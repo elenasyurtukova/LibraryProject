@@ -1,8 +1,5 @@
 from django.db import models
 
-from config.settings import AUTH_USER_MODEL
-from users.models import User
-
 
 class Author(models.Model):
     name_author = models.CharField(max_length=150, verbose_name="имя автора")
@@ -43,8 +40,9 @@ class Book(models.Model):
         ordering = ['author', 'title']
 
 class BookLoan(models.Model):
-    book = models.ForeignKey(Book, on_delete=models.CASCADE, verbose_name="Книга")
-    borrower = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name="Читатель")
+    book = models.ForeignKey(Book, on_delete=models.CASCADE, verbose_name="Книга", related_name="bookloans")
+    author = models.ForeignKey(Author, on_delete=models.CASCADE, verbose_name="Автор", related_name="bookloans")
+    borrower = models.ForeignKey("users.User", on_delete=models.CASCADE, verbose_name="Читатель", related_name="bookloans")
     issue_date = models.DateField(auto_now_add=True, verbose_name="дата выдачи")
     due_date = models.DateField(verbose_name="срок возврата")
     return_date = models.DateField(blank=True, null=True, verbose_name="дата возврата")
