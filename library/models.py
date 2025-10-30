@@ -6,12 +6,14 @@ from django.dispatch import receiver
 
 
 class Author(models.Model):
+    """Класс модели автора"""
     name_author = models.CharField(max_length=150, verbose_name="имя автора")
     bio = models.TextField(blank=True, null=True, verbose_name="биография автора")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
+        """Функция строкового представления автора"""
         return self.name_author
 
     class Meta:
@@ -23,6 +25,7 @@ class Author(models.Model):
 
 
 class Book(models.Model):
+    """Класс модели книги"""
     STATUS_CHOICES = [
         ("available", "Доступна"),
         ("on_loan", "Выдана"),
@@ -39,6 +42,7 @@ class Book(models.Model):
     )
 
     def __str__(self):
+        """Функция строкового представления книги"""
         return f"Автор: {self.author.name_author} название книги: {self.title}"
 
     class Meta:
@@ -48,6 +52,7 @@ class Book(models.Model):
 
 
 class BookLoan(models.Model):
+    """Класс модели выдачи книги"""
     book = models.ForeignKey(Book, on_delete=models.CASCADE, verbose_name="Книга")
     borrower = models.ForeignKey(
         "users.User",
@@ -65,11 +70,13 @@ class BookLoan(models.Model):
         verbose_name_plural = "Выдачи книг"
 
     def __str__(self):
+        """Функция строкового представления выдачи книги"""
         return f"Выдача книги '{self.book.title}' для пользователя {self.borrower}"
 
 
 @receiver(post_save, sender=BookLoan)
 def set_due_date(sender, instance, created, **kwargs):
+    """Функция автоматического заполнения поля срока возврата"""
     if created:
         instance.due_date = instance.issue_date + timedelta(days=30)
         instance.save()

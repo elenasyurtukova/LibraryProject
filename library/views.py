@@ -18,7 +18,7 @@ class AuthorViewSet(ModelViewSet):
     serializer_class = AuthorSerializer
 
     def get_permissions(self):
-        """метод распределения прав доступа"""
+        """Метод распределения прав доступа"""
         if self.action in ["create", "update", "partial_update", "destroy"]:
             self.permission_classes = (IsAdminUser,)
         elif self.action in ["retrieve", "list"]:
@@ -67,6 +67,7 @@ class BookDestroyApiView(DestroyAPIView):
 
 
 class BookLoanCreateApiView(CreateAPIView):
+    """Класс контроллера для создания записи выдачи книги авторизованным пользователем"""
     queryset = BookLoan.objects.all()
     serializer_class = BookLoanSerializer
     permission_classes = (IsAuthenticated,)
@@ -92,6 +93,7 @@ class BookLoanCreateApiView(CreateAPIView):
 
 
 class BookLoanUpdateApiView(UpdateAPIView):
+    """Класс контроллера для изменения записи выдачи книги администратором"""
     serializer_class = BookLoanSerializer
     permission_classes = (IsAdminUser,)
 
@@ -127,8 +129,7 @@ class BookLoanUpdateApiView(UpdateAPIView):
 
 
 class BookLoanListApiView(ListAPIView):
-    """Класс контроллера для вывода списка для всех пользователей"""
-
+    """Класс контроллера для вывода списка записей выдачи книг для всех пользователей"""
     queryset = BookLoan.objects.all()
     serializer_class = BookLoanSerializer
     permission_classes = (IsAuthenticated,)
