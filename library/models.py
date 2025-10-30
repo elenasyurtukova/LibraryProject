@@ -1,18 +1,13 @@
+from datetime import timedelta
+
 from django.db import models
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 
 
 class Author(models.Model):
     name_author = models.CharField(max_length=150, verbose_name="имя автора")
-    bio = models.TextField(
-        blank=True,
-        null=True,
-        verbose_name="биография автора")
-    photo_author = models.ImageField(
-        upload_to="library/avatars/",
-        blank=True,
-        null=True,
-        verbose_name="Портрет автора"
-    )
+    bio = models.TextField(blank=True, null=True, verbose_name="биография автора")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -22,20 +17,26 @@ class Author(models.Model):
     class Meta:
         verbose_name = "Автор"
         verbose_name_plural = "Авторы"
-        ordering = ['-created_at'] # Сортировка авторов по дате создания в обратном порядке
+        ordering = [
+            "-created_at"
+        ]  # Сортировка авторов по дате создания в обратном порядке
 
 
 class Book(models.Model):
     STATUS_CHOICES = [
-        ('available', 'Доступна'),
-        ('on_loan', 'Выдана'),
+        ("available", "Доступна"),
+        ("on_loan", "Выдана"),
     ]
     title = models.CharField(max_length=200, verbose_name="название книги")
     author = models.ForeignKey(Author, on_delete=models.CASCADE, related_name="books")
     description = models.TextField(blank=True, null=True, verbose_name="описание книги")
     genre = models.TextField(blank=True, null=True, verbose_name="жанр книги")
-    is_available = models.CharField(max_length=10, choices=STATUS_CHOICES,
-                                    default='available', verbose_name="флаг доступности книги")
+    is_available = models.CharField(
+        max_length=10,
+        choices=STATUS_CHOICES,
+        default="available",
+        verbose_name="флаг доступности книги",
+    )
 
     def __str__(self):
         return f"Автор: {self.author.name_author} название книги: {self.title}"
@@ -43,14 +44,20 @@ class Book(models.Model):
     class Meta:
         verbose_name = "Книга"
         verbose_name_plural = "Книги"
-        ordering = ['author', 'title']
+        ordering = ["author", "title"]
+
 
 class BookLoan(models.Model):
-    book = models.ForeignKey(Book, on_delete=models.CASCADE, verbose_name="Книга", related_name="bookloans")
-    author = models.ForeignKey(Author, on_delete=models.CASCADE, verbose_name="Автор", related_name="bookloans")
-    borrower = models.ForeignKey("users.User", on_delete=models.CASCADE, verbose_name="Читатель", related_name="bookloans")
+    book = models.ForeignKey(Book, on_delete=models.CASCADE, verbose_name="Книга")
+    borrower = models.ForeignKey(
+        "users.User",
+        null=True,
+        blank=True,
+        on_delete=models.CASCADE,
+        verbose_name="Читатель",
+    )
     issue_date = models.DateField(auto_now_add=True, verbose_name="дата выдачи")
-    due_date = models.DateField(verbose_name="срок возврата")
+    due_date = models.DateField(blank=True, null=True, verbose_name="срок возврата")
     return_date = models.DateField(blank=True, null=True, verbose_name="дата возврата")
 
     class Meta:
@@ -58,4 +65,11 @@ class BookLoan(models.Model):
         verbose_name_plural = "Выдачи книг"
 
     def __str__(self):
-        return f"Выдача книги '{self.book.title}' для пользователя {self.borrower.name}"
+        return f"Выдача книги '{self.book.title}' для пользователя {self.borrower}"
+
+
+@receiver(post_save, sender=BookLoan)
+def set_due_date(sender, instance, created, **kwargs):
+    if created:
+        instance.due_date = instance.issue_date + timedelta(days=30)
+        instance.save()

@@ -16,8 +16,9 @@ class BookAdmin(admin.ModelAdmin):
     list_filter = ("title", "author", "genre", "is_available")
     search_fields = ("title", "author", "genre")
 
+
 @admin.register(BookLoan)
 class BookLoanAdmin(admin.ModelAdmin):
-    list_display = ("book", "author", "borrower", "issue_date", "due_date", "return_date")
-    list_filter = ("book", "author", "borrower", "issue_date", "due_date", "return_date")
-    search_fields = ("book", "author", "borrower")
+    list_display = ("book", "borrower", "issue_date", "due_date", "return_date")
+    list_filter = ("book", "borrower", "issue_date", "due_date", "return_date")
+    search_fields = ("book", "borrower")
