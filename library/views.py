@@ -41,6 +41,26 @@ class BookListApiView(ListAPIView):
     serializer_class = BookShortSerializer
     permission_classes = (AllowAny,)
 
+    def get_queryset(self):
+        """Метод поиска книги по параметрам из URL"""
+        queryset = Book.objects.all() # получаем все объекты
+
+        # Получаем параметры из URL (например, /books/?title=Война и мир)
+        title = self.request.query_params.get('title', None)
+        author = self.request.query_params.get('author', None)
+        genre = self.request.query_params.get('genre', None)
+
+        # Применяем фильтры, если параметры присутствуют
+        if title:
+            queryset = queryset.filter(title__icontains=title)
+        if author:
+            queryset = queryset.filter(author__name_author__icontains=author)
+        if genre:
+            queryset = queryset.filter(genre__icontains=genre)
+
+        return queryset
+
+
 
 class BookRetrieveApiView(RetrieveAPIView):
     """Класс контроллера для вывода экземпляра книги для авторизованных пользователей"""

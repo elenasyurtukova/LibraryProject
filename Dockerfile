@@ -18,6 +18,3 @@ RUN poetry install --no-root
 
 # Копируем остальной код проекта
 COPY . .
-
-# Команда для запуска Django-сервера
-CMD ["poetry", "run", "python", "manage.py", "runserver", "0.0.0.0:8000"]
