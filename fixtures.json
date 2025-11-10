@@ -1,0 +1,865 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2025-10-27T12:35:02.937Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "1",
+      "object_repr": "Лев Николаевич Толстой",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2025-10-27T12:39:22.891Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "2",
+      "object_repr": "Александр Сергеевич Пушкин",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2025-10-27T12:58:20.998Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Автор: Лев Николаевич Толстой название книги: Юность",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2025-10-27T13:03:17.976Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Автор: Лев Николаевич Толстой название книги: Воскресение",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2025-10-27T13:30:34.561Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "Автор: Александр Сергеевич Пушкин название книги: Евгений Онегин",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2025-10-27T13:34:25.025Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "5",
+      "object_repr": "Автор: Александр Сергеевич Пушкин название книги: Сказка о рыбаке и рыбке",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2025-10-29T02:29:38.593Z",
+      "user": 1,
+      "content_type": 6,
+      "object_id": "3",
+      "object_repr": "Сергей Александрович Есенин",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2025-10-29T11:46:18.453Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "27",
+      "object_repr": "Выдача книги 'Юность' для пользователя None",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2025-10-29T11:46:27.074Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "26",
+      "object_repr": "Выдача книги 'Юность' для пользователя None",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2025-10-29T11:46:34.815Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "24",
+      "object_repr": "Выдача книги 'Юность' для пользователя test2@test.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2025-10-29T11:46:42.252Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "23",
+      "object_repr": "Выдача книги 'Юность' для пользователя test2@test.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2025-10-29T11:46:48.956Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "22",
+      "object_repr": "Выдача книги 'Юность' для пользователя test2@test.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2025-10-29T11:46:55.494Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "21",
+      "object_repr": "Выдача книги 'Юность' для пользователя test2@test.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2025-10-29T11:47:02.250Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "20",
+      "object_repr": "Выдача книги 'Юность' для пользователя test2@test.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2025-10-29T11:47:08.844Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "19",
+      "object_repr": "Выдача книги 'Юность' для пользователя test2@test.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2025-10-29T11:47:15.023Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "18",
+      "object_repr": "Выдача книги 'Юность' для пользователя test2@test.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2025-10-29T11:47:21.756Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "17",
+      "object_repr": "Выдача книги 'Юность' для пользователя test2@test.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2025-10-29T11:47:28.815Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "16",
+      "object_repr": "Выдача книги 'Юность' для пользователя test2@test.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2025-10-29T11:47:36.456Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "15",
+      "object_repr": "Выдача книги 'Юность' для пользователя test2@test.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2025-10-29T11:47:49.429Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "14",
+      "object_repr": "Выдача книги 'Юность' для пользователя test2@test.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2025-10-29T11:48:12.304Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "13",
+      "object_repr": "Выдача книги 'Воскресение' для пользователя test2@test.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2025-10-29T11:48:26.548Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "9",
+      "object_repr": "Выдача книги 'Юность' для пользователя test1@test.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 4,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 4,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 4,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 4,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 5,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 5,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 5,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 5,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add Автор",
+      "content_type": 6,
+      "codename": "add_author"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change Автор",
+      "content_type": 6,
+      "codename": "change_author"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete Автор",
+      "content_type": 6,
+      "codename": "delete_author"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view Автор",
+      "content_type": 6,
+      "codename": "view_author"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add Книга",
+      "content_type": 7,
+      "codename": "add_book"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change Книга",
+      "content_type": 7,
+      "codename": "change_book"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete Книга",
+      "content_type": 7,
+      "codename": "delete_book"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view Книга",
+      "content_type": 7,
+      "codename": "view_book"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add Выдача книги",
+      "content_type": 8,
+      "codename": "add_bookloan"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change Выдача книги",
+      "content_type": 8,
+      "codename": "change_bookloan"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete Выдача книги",
+      "content_type": 8,
+      "codename": "delete_bookloan"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view Выдача книги",
+      "content_type": 8,
+      "codename": "view_bookloan"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add Пользователь",
+      "content_type": 9,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change Пользователь",
+      "content_type": 9,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete Пользователь",
+      "content_type": 9,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view Пользователь",
+      "content_type": 9,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "library",
+      "model": "author"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "library",
+      "model": "book"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "library",
+      "model": "bookloan"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "users",
+      "model": "user"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "3jkrxhic4s6hwaxhiuzwn54xzgsrq29k",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hAopTAu3XsGMjCDVA0kpV0Z765NutDtf-_9lwi4rSVsnZcwkzgLLU6_W8T04LoDumO9NZlaXZc5yl2RB-3y2oifl8P9OyjYy7cGlyceXY5E0aasFVhjJrIDOO3RIWqTPajoEgMzjYNHZqvBsSUmBeL9AfVIOIQ:1vDvvl:UKqC6rqZ7iGyOaLi7yJLgJNYnJTvUmuPcqNnEKKfdxI",
+      "expire_date": "2025-11-12T02:28:57.551Z"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 1,
+    "fields": {
+      "name_author": "Лев Николаевич Толстой",
+      "bio": "Лев Николаевич Толстой (28 августа (9 сентября) 1828, усадьба Ясная Поляна Тульской губернии — 7 (20) ноября 1910, станция Астапово Рязанской губернии) — русский писатель, просветитель, публицист, религиозный мыслитель, основатель религиозно-этического учения — толстовства.\r\nДетство\r\nТолстой был четвёртым ребёнком в дворянской семье, у него было три старших брата и младшая сестра. Рано осиротел: мать умерла, когда мальчику не было ещё двух лет, а в девять лет он лишился и отца. Опекуном пятерых детей Толстых стала тётя — Александра Остен-Сакен. Два старших ребёнка переехали к тёте в Москву, а младшие остались в Ясной Поляне. \r\nОбразование\r\nВ 1844 году Толстой поступил в Императорский Казанский университет на отделение восточных языков философского факультета, затем перевелся на юридический факультет. В 1847 году подал прошение об отчислении «по расстроенному здоровью и домашним обстоятельствам» и вернулся в Ясную Поляну, где занялся сельским хозяйством. \r\nТворчество\r\nНекоторые этапы творческой деятельности Льва Толстого:\r\nПервое произведение — повесть «Детство» — было опубликовано в журнале «Современник» в 1852 году (впоследствии вместе с повестями «Отрочество» и «Юность» составила автобиографическую трилогию).\r\nКавказские впечатления отразились в повести «Казаки» (1852–1863) и в рассказах «Набег» (1853), «Рубка леса» (1855).\r\nВ 1854 году Толстой отправился на Дунайский фронт, вскоре после начала Крымской войны его по личной просьбе перевели в Севастополь, где писателю довелось пережить осаду города. Этот опыт вдохновил его на реалистические «Севастопольские рассказы» (1855–1856).\r\nВ 1860–1870-е годы Толстой написал романы «Война и мир» (1863–1869) и «Анна Каренина» (1873–1877).\r\nС 1873 года писатель являлся членом-корреспондентом Императорской Санкт-Петербургской Академии наук (ныне — Российская академия наук), с января 1900 года — почётным академиком по разряду изящной словесности.\r\nЛичная жизнь\r\nВ 1862 году Толстой женился на Софье Андреевне Берс. Они прожили вместе 48 лет, до самой смерти Толстого. Софья Андреевна родила Толстому 13 детей, пятеро из которых умерли в раннем возрасте.",
+      "created_at": "2025-10-27T12:35:02.813Z",
+      "updated_at": "2025-10-27T12:35:02.813Z"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 2,
+    "fields": {
+      "name_author": "Александр Сергеевич Пушкин.",
+      "bio": "Александр Сергеевич Пушкин (26 мая (6 июня) 1799, Москва — 29 января (10 февраля) 1837, Санкт-Петербург) — русский поэт, драматург и прозаик, литературный критик, переводчик, публицист, историк. Считается основоположником современного русского литературного языка.\r\nДетство\r\nРодился в дворянской семье. В раннем детстве часто гостил у бабушки в подмосковном селе Захарове. Здесь познакомился с няней Ариной Родионовной, которая стала ему близким человеком на всю жизнь. \r\nЛитературный интерес проявился с раннего детства: Пушкин любил читать и мог проводить часы в кабинете отца, где был доступ к библиотеке. Первые попытки писать пришлись на семь лет — это были подражания: мальчик сочинял их после того, как читал произведения французских поэтов и драматургов. \r\nОбразование\r\nВ 1811 году, в возрасте 12 лет, Пушкин поступил в Царскосельский лицей — учебное заведение для детей дворян. Там он занимался изучением гуманитарных и естественных наук, языков и физической подготовкой — учился фехтованию, верховой езде, танцам. \r\nВ 1817 году Пушкин окончил лицей, получив чин коллежского секретаря. \r\nТворчество\r\nСтихи начал писать ещё в Лицее, уже тогда обратив на себя внимание виднейших литераторов того времени — В.А. Жуковского, К.Н. Батюшкова, И.И. Дмитриева, Н.М. Карамзина, П.Я. Чаадаева и других.\r\nНекоторые этапы творчества:\r\n1820 год — Пушкин завершил поэму «Руслан и Людмила», которая принесла ему широкую известность.\r\nВ 1820 году за вольнодумные стихи (оду «Вольность» и некоторые эпиграммы) Пушкин был отправлен в «южную ссылку» — вынужденную командировку в южные районы империи.\r\nС 1824 года находился в ссылке в имении матери в селе Михайловское недалеко от Пскова. В Михайловском Пушкиным были написаны и дописаны произведения «Цыганы», «Граф Нулин», «Борис Годунов», первая глава «Евгения Онегина» и другие.\r\nВ 1836 году основал журнал «Современник».\r\nЛичная жизнь\r\n2 марта 1831 года Пушкин женился на Наталье Гончаровой. У них было четверо детей (два мальчика и две девочки).\r\n8 февраля 1837 года поэт дрался на дуэли с Дантесом, был ранен и умер 10 февраля 1837 года в возрасте 37 лет. Похоронен на территории Святогорского монастыря Псковской губернии.",
+      "created_at": "2025-10-27T12:39:22.762Z",
+      "updated_at": "2025-10-29T02:07:05.350Z"
+    }
+  },
+  {
+    "model": "library.author",
+    "pk": 3,
+    "fields": {
+      "name_author": "Сергей Александрович Есенин",
+      "bio": "биография есть",
+      "created_at": "2025-10-29T02:29:38.433Z",
+      "updated_at": "2025-10-29T02:44:40.122Z"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 2,
+    "fields": {
+      "title": "Юность",
+      "author": 1,
+      "description": "«Юность» — автобиографическая повесть Льва Толстого, написанная в 1857 году и входящая в трилогию автора («Детство», «Отрочество», «Юность»).",
+      "genre": "Повесть",
+      "is_available": "available"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 3,
+    "fields": {
+      "title": "Воскресение",
+      "author": 1,
+      "description": "«Воскресение» — последний роман Льва Николаевича Толстого, написанный в 1889–1899 годах. \r\nВ центре повествования — судьба Катюши Масловой, молодой женщины, соблазнённой и брошенной дворянином Нехлюдовым. Оставшись без поддержки, героиня становится проституткой и вскоре предстаёт перед судом по ложному обвинению в убийстве. Её приговаривают к каторжным работам. \r\nНехлюдов решает помочь Катюше и добивается пересмотра дела. Тем временем Маслова сближается с политическими заключёнными и сильно меняется внутренне. \r\nВ романе представлена социальная панорама русской жизни конца XIX века от высших до низших слоёв: в нём фигурируют аристократы, петербургские чиновники, крестьяне, каторжники, революционеры и политические заключённые. \r\nРоман почти сразу после публикации был переведён на основные европейские языки. «Воскресение» оказалось в числе тех произведений Толстого, из-за которых он был отлучен от церкви. \r\nСовременники приняли роман восторженно. По мнению Ленина, в нём Лев Толстой «обрушился со страстной критикой на все современные государственные, церковные, общественные, экономические порядки, выразил непосредственный и искренний протест против общества лжи и фальши».",
+      "genre": "Роман",
+      "is_available": "available"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 4,
+    "fields": {
+      "title": "Евгений Онегин",
+      "author": 2,
+      "description": "«Евге́ний Оне́гин» — роман в стихах русского поэта Александра Сергеевича Пушкина, начат 9 мая 1823 года и закончен 5 октября 1831 года, одно из самых значительных произведений русской словесности. Повествование ведётся от имени безымянного автора, который, впрочем, в первых же строфах называет Онегина «добрый мой приятель». По известному определению В. Г. Белинского, Пушкин назвал «Евгения Онегина» романом в стихах, поскольку в нём изображена «жизнь во всей её прозаической действительности».\r\nАлександр Пушкин работал над этим романом на протяжении более чем семи лет. Работу над ним Пушкин называл подвигом — из всего своего творческого наследия только «Бориса Годунова» он характеризовал этим же словом. В произведении на широком фоне картин русской жизни показана драматическая судьба представителей русского дворянства первой четверти XIX века.",
+      "genre": "Роман в стихах",
+      "is_available": "on_loan"
+    }
+  },
+  {
+    "model": "library.book",
+    "pk": 5,
+    "fields": {
+      "title": "Сказка о рыбаке и рыбке",
+      "author": 2,
+      "description": "«Сказка о рыбаке и рыбке» Александра Пушкина, написанная 2 (14) октября 1833 года, показывает печальные последствия излишней жадности и слабоволия. \r\nСюжет: старик с женой живёт у моря. Он добывает пропитание рыбной ловлей, а старуха прядёт. Однажды в сети старика попадается необычная золотая рыбка, способная говорить человеческим голосом. Она обещает любой выкуп, какой он захочет, и просит отпустить её в море, но старик отпускает рыбку, не прося награды. \r\nВернувшись в свою ветхую землянку, он рассказывает жене о произошедшем. Обругав мужа, она заставляет его вернуться к морю, позвать рыбку и попросить хотя бы новое корыто вместо разбитого. У моря старик зовёт рыбку, которая появляется и обещает исполнить его желание, говоря: «Не печалься, ступай себе с Богом». После возвращения домой он видит у жены новое корыто. \r\nОднако желания старухи всё возрастают — она заставляет мужа возвращаться к рыбке снова и снова, требуя (сначала для обоих, а потом только для себя самой) всё больше и больше: получить новую избу, стать столбовой дворянкой, быть «вольною царицей». \r\nМоре, к которому приходит старик, постепенно меняется от спокойного и синего к чёрному и бурному, а под конец — к штормящему. Отношение старухи к старику тоже меняется: сначала она всё ещё ругает его, потом, став дворянкой, посылает на конюшню, а став царицей, и вовсе прогоняет. \r\nПод конец она призывает мужа обратно и требует, чтобы рыбка сделала её «владычицей морскою», причём сама рыбка должна стать у неё в услужении. Рыбка не отвечает на очередную просьбу старика, а когда он возвращается домой, то видит старуху, сидящую перед старой землянкой у старого разбитого корыта.",
+      "genre": "Сказка",
+      "is_available": "available"
+    }
+  },
+  {
+    "model": "library.bookloan",
+    "pk": 10,
+    "fields": {
+      "book": 3,
+      "borrower": 2,
+      "issue_date": "2025-10-29",
+      "due_date": "2025-11-28",
+      "return_date": "2025-10-29"
+    }
+  },
+  {
+    "model": "library.bookloan",
+    "pk": 25,
+    "fields": {
+      "book": 2,
+      "borrower": 3,
+      "issue_date": "2025-10-29",
+      "due_date": "2025-11-28",
+      "return_date": "2025-10-29"
+    }
+  },
+  {
+    "model": "library.bookloan",
+    "pk": 28,
+    "fields": {
+      "book": 4,
+      "borrower": 3,
+      "issue_date": "2025-10-29",
+      "due_date": "2025-11-28",
+      "return_date": null
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$szV7v6YhIxQpaVlaRmBCuc$qpDzVR3EM8GKp3rWjYxyJMboZYMgO9s8ldZRAYvkUcM=",
+      "last_login": "2025-10-29T02:28:57.487Z",
+      "is_superuser": true,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2025-10-27T12:22:00.292Z",
+      "email": "admin@example.com",
+      "phone": null,
+      "name": "",
+      "avatar": "",
+      "city": null,
+      "number_of_delays": 0,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$4Eps9NPbYgWWwS2c7iWH9J$zXVQnDPAVEBDMsc04Hdl15+OSGtJEhwiDCCNWrqat+g=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-10-27T14:42:31.888Z",
+      "email": "test1@test.com",
+      "phone": "+79141111111",
+      "name": "Иванов Иван Иванович",
+      "avatar": "",
+      "city": "Тестовый город",
+      "number_of_delays": 3,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$yDzIl0E4IDwffDeNszl9RJ$ryBSQ9IvQpTRtB5a6WcTOJeeea48rvPfKflaqcFkG5g=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-10-29T05:46:01.144Z",
+      "email": "test2@test.com",
+      "phone": null,
+      "name": "Сергеев Сергей Сергеевич",
+      "avatar": "",
+      "city": "Chita",
+      "number_of_delays": 0,
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]
